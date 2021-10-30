@@ -27,7 +27,7 @@ session_start()
 								<table>
 									<tr height="50px">
 									   <td>
-										  Tài khoản :
+										  Tài khoản : thêm 1 dòng 
 									   </td>
 									   <td>
 										   <input type="text" name="taikhoan">
