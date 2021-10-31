@@ -6,7 +6,7 @@
 body {
     font-family: Calibri;
     font-size: 14px;
-    background: #e8e9e9;
+    background: #f80c0c;
     background-image: url('../image/bgindex.jpg');
 }
 
@@ -364,10 +364,15 @@ header {
     font-size: 16px;
 }
 
-#contact-contain img {
+#thongtinslide table {
+    background-color: seashell;
+}
+
+
+/* #contact-contain img {
     float: left;
     margin-right: 10px;
-}
+} */
 
 .chucnang {
     margin-top: 20px;
@@ -414,6 +419,11 @@ header {
     transition: 0.3s ease-out;
     border-radius: 5px;
     box-shadow: 0px 0px 1px 1px #440505;
+    background-color: #f7f7f7;
+}
+
+#formlogin a {
+    color: red;
 }
 
 #formlogin:hover {
@@ -431,7 +441,7 @@ header {
 
 #formlogin input {
     height: 20px;
-    background: #18010180;
+    background: #4c97ec80;
     color: white;
     border: none;
     border-radius: 5px;

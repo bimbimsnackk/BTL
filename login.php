@@ -27,7 +27,7 @@ session_start()
 								<table>
 									<tr height="50px">
 									   <td>
-										  Tài khoản : thêm 1 dòng 
+										  Tài khoản :
 									   </td>
 									   <td>
 										   <input type="text" name="taikhoan">
@@ -42,7 +42,7 @@ session_start()
 										</td> 
 									</tr>
 								</table>
-								<input id="btndangnhap" type="submit" name="login" value="Login">
+								<input id="btndangnhap" type="submit" name="login" value="Đăng nhập">
         						<p>Bạn chưa có tài khoản? <a href='register.php'>Đăng ký ngay</a></p><br/>
 					 </form>
 								<?php

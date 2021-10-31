@@ -13,11 +13,11 @@ if (isset($_SESSION['username'])) {
 
   <head>
     <meta charset="utf-8">
-    <title>SM - Trang chủ</title>
+    <title>Trang chủ</title>
     <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="style/fontawesome/css/all.css">
-    <link rel="shortcut icon" href="image/logokhoa.ico">
-
+    <link rel="shortcut icon" href="image/logotlu.png">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
   </head>
 
   <body>
@@ -51,19 +51,44 @@ if (isset($_SESSION['username'])) {
           </ul>
           </br>
         </div>
-        <div id="cthome">
-          <div>
-            <marquee behavior="alternate" height='50px'><h1 font-size='50px'>I love you <3 </h1></marquee>
-            
+        <div id="main-contain">
+          <h2>Thông tin</h2></br>
+          <div id="thongtinslide">
+            <div class="card-group">
+              <div class="card">
+                <img class="card-img-top" src="image/anhslide.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Hệ điều hành</h5>
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                </div>
+                <div class="card-footer">
+                  <small class="text-muted">Last updated 3 mins ago</small>
+                </div>
+              </div>
+              <div class="card">
+                <img class="card-img-top" src="image/anhslide.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Công nghệ Web</h5>
+                  <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                </div>
+                <div class="card-footer">
+                  <small class="text-muted">Last updated 3 mins ago</small>
+                </div>
+              </div>
+              <div class="card">
+                <img class="card-img-top" src="image/anhslide.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Thống kê ứng dụng</h5>
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                </div>
+                <div class="card-footer">
+                  <small class="text-muted">Last updated 3 mins ago</small>
+                </div>
+              </div>
+            </div>
           </div>
+        </div>
       </div>
-    </div>
-    <!--endbody-->
-    <footer>
-      <div class="container">
-        Phiên bản beta
-      </div>
-    </footer>
   </body>
 
   </html>

@@ -14,7 +14,7 @@
         <title>Giảng viên </title>
         <link rel="stylesheet" href="style/style.css">
         <link rel="stylesheet" href="style/fontawesome/css/all.css">
-		<link rel="shortcut icon" href="image/logokhoa.ico">
+		<link rel="shortcut icon" href="image/logotlu.png">
     </head>
     <body>
         <header> 
@@ -49,8 +49,6 @@
 							</div>
 							<div id="main-contain"> 
 							<h2>GIẢNG VIÊN KHOA </h2>
-								
-								
 										<?php
 												if( mysqli_num_rows($result) > 0 )
 												{
@@ -93,12 +91,6 @@
 					</div>
 			</div>
         <!--endbody-->
-		<footer>
-			<div class="container">
-				Phiên bản beta 
-			</div>
-		</footer>
-       
     </body>
 </html>
 <?php

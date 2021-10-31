@@ -12,7 +12,7 @@
         <title>Thông tin lớp học</title>
         <link rel="stylesheet" href="style/style.css">
         <link rel="stylesheet" href="style/fontawesome/css/all.css">
-		<link rel="shortcut icon" href="image/logokhoa.ico">
+		<link rel="shortcut icon" href="image/logotlu.png">
     </head>
     <body>
         <header> 

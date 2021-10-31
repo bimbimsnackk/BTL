@@ -9,7 +9,7 @@ session_start()
     <meta charset="utf-8">
     <title>Đăng nhập</title>
     <link rel="stylesheet" href="style/style.css">
-    <link rel="shortcut icon" href="image/logokhoa.ico">
+    <link rel="shortcut icon" href="image/logotlu.png">
 </head>
 
 <body>
