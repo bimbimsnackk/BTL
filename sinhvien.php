@@ -21,11 +21,11 @@
 					  <div id="logoImg">
 						   <img src="image/lgtlu.png" width="30px">
 					  </div>
-					<a href="index.php">STUDENT MANAGER</a>
+					<a href="index.php">Quản lí sinh viên</a>
 				 </div>
 				<div id="accountName">
 					
-					<p> Xin chào ! </p>
+					<p> Xin chào !  <?php echo $_SESSION['username'] ?> </p>
 					<a href="dangxuat.php" alt= "Đăng xuất"> <img src="image/logout.png" width="25px"> </a>
 				</div>
             </div>

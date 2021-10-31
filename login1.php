@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Xin chào</title>
     <link rel="stylesheet" href="style/login1.css">
-	<link rel="shortcut icon" href="image/logokhoa.ico">
+	<link rel="shortcut icon" href="image/logotlu.png">
 </head>
 <body>
     <div class="header">
