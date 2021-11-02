@@ -3,7 +3,7 @@
 <?php
 	session_start();
 	if (isset($_SESSION['username'])){
-	$link = new mysqli('localhost','root','','sinhvien') or die('kết nối thất bại '); 
+	$link = new mysqli('localhost','root','','sinhvien','3308') or die('kết nối thất bại '); 
 	mysqli_query($link, 'SET NAMES UTF8');			
 ?>
 
@@ -12,20 +12,20 @@
         <title>Sinh viên</title>
         <link rel = "stylesheet" href = "../style/style.css">
         <link rel = "stylesheet" href = "../style/fontawesome/css/all.css">
-		<link rel = "shortcut icon" href = "../image/logokhoa.ico">
+		<link rel = "shortcut icon" href = "../image/lgtlu.png">
     </head>
     <body>
         <header> 
             <div class="container"> 
                  <div id="logo">
 					  <div id="logoImg">
-						   <img src="../image/logokhoa.png " width="30px">
+						   <img src="../image/lgtlu.png" width="30px">
 					  </div>
-					<a href="../index.php">STUDENT MANAGER</a>
+					<a href="../index.php">Quản lí sinh viên</a>
 				 </div>
 				<div id="accountName">
 					
-					<p> Xin chào ! </p>
+					<p> Xin chào !  <?php echo $_SESSION['username'] ?> </p>
 					<a href="../dangxuat.php" alt="Đăng xuất"> <img src="../image/logout.png" width="25px"> </a>
 				 </div>
             </div>

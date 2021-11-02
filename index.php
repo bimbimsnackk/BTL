@@ -59,7 +59,10 @@ if (isset($_SESSION['username'])) {
                 <img class="card-img-top" src="image/anhslide.jpg" alt="Card image cap">
                 <div class="card-body">
                   <h5 class="card-title">Hệ điều hành</h5>
-                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <p class="card-text">Số tiết : 45 tiết</p>
+                  <p class="card-text">Thực hành : 5 buổi</p>
+                  <!-- taget chuyển sang tab mới -->
+                  <a href="https://drive.google.com/drive/folders/1Ex-3wsLMLTyNk6Al-J6_NSiTRxRsSxKG?usp=sharing" target="_blank"><button>Xem Slide</button></a>
                 </div>
                 <div class="card-footer">
                   <small class="text-muted">Last updated 3 mins ago</small>
@@ -69,7 +72,10 @@ if (isset($_SESSION['username'])) {
                 <img class="card-img-top" src="image/anhslide.jpg" alt="Card image cap">
                 <div class="card-body">
                   <h5 class="card-title">Công nghệ Web</h5>
-                  <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                  <p class="card-text">Số tiết : 45 tiết</p>
+                  <p class="card-text">Thực hành : 5 buổi</p>
+                  <!-- taget chuyển sang tab mới -->
+                  <a href="https://drive.google.com/drive/folders/1Ex-3wsLMLTyNk6Al-J6_NSiTRxRsSxKG?usp=sharing" target="_blank"><button>Xem Slide</button></a>
                 </div>
                 <div class="card-footer">
                   <small class="text-muted">Last updated 3 mins ago</small>
@@ -79,7 +85,10 @@ if (isset($_SESSION['username'])) {
                 <img class="card-img-top" src="image/anhslide.jpg" alt="Card image cap">
                 <div class="card-body">
                   <h5 class="card-title">Thống kê ứng dụng</h5>
-                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                  <p class="card-text">Số tiết : 45 tiết</p>
+                  <p class="card-text">Thực hành : 5 buổi</p>
+                  <!-- taget chuyển sang tab mới -->
+                  <a href="https://drive.google.com/drive/folders/1Ex-3wsLMLTyNk6Al-J6_NSiTRxRsSxKG?usp=sharing" target="_blank"><button>Xem Slide</button></a>
                 </div>
                 <div class="card-footer">
                   <small class="text-muted">Last updated 3 mins ago</small>

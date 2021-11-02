@@ -44,7 +44,7 @@ die ();
 }
 else {
 $sql = "INSERT INTO users (user_name, pass_word,name, email, phone) VALUES ('$username','$password','$name','$email','$phone')";
-echo '<script language="javascript">alert("Đăng ký thành công!"); window.location="register.php";</script>';
+echo '<script language="javascript">alert("Đăng ký thành công!"); window.location="login.php";</script>';
 
 if (mysqli_query($link, $sql)){
 echo "Tên đăng nhập: ".$_POST['user_name']."<br/>";

@@ -368,6 +368,10 @@ header {
     background-color: seashell;
 }
 
+#thongtinslide button {
+    color: #0549e5;
+}
+
 
 /* #contact-contain img {
     float: left;
