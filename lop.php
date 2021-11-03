@@ -37,6 +37,7 @@
 				<div id="menu">
                   <ul>
                       <li><a  href="index.php"><i class="fas fa-home"></i>Trang chủ</a></li>
+					  <li><a href="thongbao.php"><i class="fas fa-users"></i>Thông báo</a></li>
                       <li><a id="current" href="lop.php"><i class="fas fa-users"></i>LỚP</a></li>
                       <li><a href="sinhvien.php" ><i class="fas fa-graduation-cap"></i>SINH VIÊN</a></li>
                       <li><a href="giangvien.php"><i class="fas fa-chalkboard-teacher"></i>GIẢNG VIÊN</a></li>
@@ -90,7 +91,6 @@
         <!--endbody-->
 		<footer>
 			<div class="container">
-				Phiên bản beta
 			</div>
 		</footer>
        

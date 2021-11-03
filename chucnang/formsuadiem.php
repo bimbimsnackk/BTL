@@ -143,7 +143,6 @@
         <!--endbody-->
 		<footer>
 			<div class="container">
-				Phiên bản beta - Developement by Phạm Hiếu
 			</div>
 		</footer>
        

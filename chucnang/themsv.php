@@ -140,7 +140,6 @@
         <!--endbody-->
 		<footer>
 			<div class="container">
-				Phiên bản beta
 			</div>
 		</footer>
        

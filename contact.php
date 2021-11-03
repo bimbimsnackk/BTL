@@ -1,20 +1,18 @@
-<!DOCTYPE html>
-<html>
 <?php
 session_start();
 if (isset($_SESSION['username'])) {
 	$link = new mysqli('localhost', 'root', '', 'sinhvien', '3308') or die('kết nối thất bại ');
 	mysqli_query($link, 'SET NAMES UTF8');
 ?>
-
+	<!DOCTYPE html>
+	<html>
 	<head>
 		<meta charset="utf-8">
-		<title>Contact</title>
+		<title>Liên hệ</title>
 		<link rel="stylesheet" href="style/style.css">
 		<link rel="stylesheet" href="style/fontawesome/css/all.css">
 		<link rel="shortcut icon" href="image/logotlu.png">
 	</head>
-
 	<body>
 		<header>
 			<div class="container">
@@ -38,6 +36,7 @@ if (isset($_SESSION['username'])) {
 				<div id="menu">
 					<ul>
 						<li><a href="index.php"><i class="fas fa-home"></i>Trang chủ</a></li>
+						<li><a href="thongbao.php"><i class="fas fa-users"></i>Thông báo</a></li>
 						<li><a href="lop.php"><i class="fas fa-users"></i>LỚP</a></li>
 						<li><a href="sinhvien.php"><i class="fas fa-graduation-cap"></i>SINH VIÊN</a></li>
 						<li><a href="giangvien.php"><i class="fas fa-chalkboard-teacher"></i>GIẢNG VIÊN</a></li>
@@ -52,10 +51,10 @@ if (isset($_SESSION['username'])) {
 						<!-- <img src="image/logokhoa.png" alt="khoacndttt"/ width="100px" height="100px">  -->
 						<br><big>
 							<span style="color:white">THUYLOI UNIVERSITY</span></big><br>
-							Address :175 Tay Son Street, Dong Da District<br>
-							Tel: +84 - 24 - 38533083</br>
-							Fax: +84 - 24 - 35636221</br>
-							Email: ico@tlu.edu.vn
+						Address :175 Tay Son Street, Dong Da District<br>
+						Tel: +84 - 24 - 38533083</br>
+						Fax: +84 - 24 - 35636221</br>
+						Email: ico@tlu.edu.vn
 					</div>
 				</div>
 
@@ -65,12 +64,12 @@ if (isset($_SESSION['username'])) {
 		<!--endbody-->
 		<footer>
 			<div class="container">
-				<!-- Phiên bản beta -->
+
 		</footer>
 
 	</body>
 
-</html>
+	</html>
 <?php
 } else {
 	header('location:login.php');

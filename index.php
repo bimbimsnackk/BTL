@@ -5,8 +5,6 @@ if (isset($_SESSION['username'])) {
   // echo $_SESSION['username'];
   $link = new mysqli('localhost', 'root', '', 'sinhvien', '3308') or die('failed');
   mysqli_query($link, 'SET NAMES UTF8');
-  $query = 'SELECT * FROM tintuc';
-  $result = mysqli_query($link, $query);
 ?>
   <!DOCTYPE html>
   <html>
@@ -41,6 +39,7 @@ if (isset($_SESSION['username'])) {
         <div id="menu">
           <ul>
             <li><a id="current" href="#"><i class="fas fa-home"></i>Trang chủ</a></li>
+            <li><a href="thongbao.php"><i class="fas fa-users"></i>Thông báo</a></li>
             <li><a href="lop.php"><i class="fas fa-users"></i>LỚP</a></li>
             <li><a href="sinhvien.php"><i class="fas fa-graduation-cap"></i>SINH VIÊN</a></li>
             <li><a href="giangvien.php"><i class="fas fa-chalkboard-teacher"></i>GIẢNG VIÊN</a></li>
@@ -52,7 +51,7 @@ if (isset($_SESSION['username'])) {
           </br>
         </div>
         <div id="main-contain">
-          <h2>Thông tin</h2></br>
+          <h2>Thông tin môn học</h2></br>
           <div id="thongtinslide">
             <div class="card-group">
               <div class="card">
@@ -75,7 +74,7 @@ if (isset($_SESSION['username'])) {
                   <p class="card-text">Số tiết : 45 tiết</p>
                   <p class="card-text">Thực hành : 5 buổi</p>
                   <!-- taget chuyển sang tab mới -->
-                  <a href="https://drive.google.com/drive/folders/1Ex-3wsLMLTyNk6Al-J6_NSiTRxRsSxKG?usp=sharing" target="_blank"><button>Xem Slide</button></a>
+                  <a href="https://drive.google.com/drive/folders/1pdoyagQcErxNHfu60mIKwmUDEBx9tJq1" target="_blank"><button>Xem Slide</button></a>
                 </div>
                 <div class="card-footer">
                   <small class="text-muted">Last updated 3 mins ago</small>
@@ -88,7 +87,7 @@ if (isset($_SESSION['username'])) {
                   <p class="card-text">Số tiết : 45 tiết</p>
                   <p class="card-text">Thực hành : 5 buổi</p>
                   <!-- taget chuyển sang tab mới -->
-                  <a href="https://drive.google.com/drive/folders/1Ex-3wsLMLTyNk6Al-J6_NSiTRxRsSxKG?usp=sharing" target="_blank"><button>Xem Slide</button></a>
+                  <a href="https://drive.google.com/drive/folders/1pdoyagQcErxNHfu60mIKwmUDEBx9tJq1" target="_blank"><button>Xem Slide</button></a>
                 </div>
                 <div class="card-footer">
                   <small class="text-muted">Last updated 3 mins ago</small>

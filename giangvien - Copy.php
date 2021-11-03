@@ -33,9 +33,9 @@
             <div class="container"> 
                  <div id="logo">
 					  <div id="logoImg">
-						   <img src="image/logokhoa.png " width="30px">
+						   <img src="image/lgtlu.png " width="30px">
 					  </div>
-					<a href="index.php">STUDENT MANAGER</a>
+					<a href="index.php">Quản lí sinh viên</a>
 				 </div>
 				 <div id="accountName">
 					
@@ -51,6 +51,7 @@
 				<div id="menu">
                   <ul>
                       <li> <a href="index.php">Trang chủ</a> </li>
+					  <li><a href="thongbao.php"><i class="fas fa-users"></i>Thông báo</a></li>
 					  <li><a href="lop.php">LỚP</a></li>
                       <li> <a href="sinhvien.php">SINH VIÊN</a> </li>
                       <li> <a id="current"  href="giangvien.php">GIẢNG VIÊN</a> </li>

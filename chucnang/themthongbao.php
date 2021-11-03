@@ -8,10 +8,16 @@
 ?>
     <head>
         <meta charset="utf-8">
-        <title>Lớp học</title>
+        <title>Thông Báo</title>
         <link rel="stylesheet" href="../style/style.css">
         <link rel="stylesheet" href="../style/fontawesome/css/all.css">
 		<link rel="shortcut icon" href="../image/logotlu.png">	
+        <style>
+            #nd {
+                height: 200px;
+                width: 300px;
+            }
+        </style>
     </head>
     <body>
         <header> 
@@ -35,9 +41,9 @@
 			<div class="container"> 
 				<div id="menu">
                     <ul>
-                      <li><a href="../index.php"><i class="fas fa-home"></i>Trang chủ</a></li>
-					  <li><a href="../thongbao.php"><i class="fas fa-users"></i>Thông báo</a></li>
-                      <li><a id="current" href="../lop.php"><i class="fas fa-users"></i>LỚP</a></li>
+                      <li><a  href="../index.php"><i class="fas fa-home"></i>Trang chủ</a></li>
+                      <li><a id="current" href="../thongbao.php"><i class="fas fa-users"></i>Thông báo</a></li>
+                      <li><a href="../lop.php"><i class="fas fa-users"></i>LỚP</a></li>
                       <li><a href="../sinhvien.php" ><i class="fas fa-graduation-cap"></i>SINH VIÊN</a></li>
                       <li><a href="../giangvien.php"><i class="fas fa-chalkboard-teacher"></i>GIẢNG VIÊN</a></li>
                       <li><a href="../diemthi.php"><i class="fas fa-check"></i>ĐIỂM THI</a></li>
@@ -46,40 +52,25 @@
 
               </div>
               <div id="main-contain"> 
-				<h2>Thêm Lớp</h2>
+				<h2>Thêm Thông Báo</h2>
 				
 				<div class="form">
-					<span style="font-size: 20px; color: red; font-style: italic"><b>Mời nhập thông tin lớp học : </b> </span> </br>
+					<span style="font-size: 20px; color: red; font-style: italic"><b>Mời nhập thông tin cần nhắc : </b> </span> </br>
 					(Chú ý điền đủ thông tin)
 					</br></br>
 					<form method="post">
 						<table>
 							<tr> 
-								<td>Tên Lớp : </td>
-								<td> <input type="text" name="ten" autofocus></td>
+								<td>Tiêu Đề :</td>
+								<td> <input type="text" name="tieude"></td>
 							</tr>
 							<tr>
-								<td>GVCN :</td>
-								<td> <input type="text" name="GVCN"></td>
+								<td>Nội dung :</td>
+								<td> <input id="nd" type="text" name="noidung"></td>
 							</tr>
-							<tr>
-								<td>Phòng học : </td>
-								<td> <select name="phonghoc">
-										<option>P.101</option>
-										<option>P.102</option>
-										<option>P.103</option>
-										<option>P.201</option>
-										<option>P.202</option>
-										<option>P.203</option>
-										<option>P.301</option>
-										<option>P.302</option>
-										<option>P.303</option>
-									</select>
-							</tr>
-					
 							<tr>
 								<td colspan=2>
-								<input id="btnChapNhan" type="submit" value="Hoàn tất" name="them"/>
+								<input id="btnChapNhan" type="submit" value="Hoàn tất" name="themthongbao"/>
 								</td>
 							</tr>
 						</table>
@@ -92,20 +83,19 @@
 						$link = new mysqli('localhost','root','','sinhvien','3308') or die('kết nối thất bại '); 
 						mysqli_query($link, 'SET NAMES UTF8');
 						
-						if(isset($_POST['them'])){
-							if(empty($_POST['ten']) or empty($_POST['GVCN']) or empty($_POST['phonghoc'])) {echo'</br> <p style="color:red; "> Bạn chưa nhập thông tin đầy đủ ! </p> </br>';}
+						if(isset($_POST['themthongbao'])){
+							if(empty($_POST['tieude']) or empty($_POST['noidung'])) {echo'</br> <p style="color:red; "> Bạn chưa nhập thông tin đầy đủ ! </p> </br>';}
 							else{
-							$lop = $_POST['ten'];
-							$GVchunhiem = $_POST['GVCN'];
-							$phongHoc = $_POST['phonghoc'];
-							$query = "INSERT INTO `lophoc`( `tenlop`, `chunhiem`, `phonghoc`) VALUES('$lop','$GVchunhiem','$phongHoc')";
+							$tieude = $_POST['tieude'];
+							$noidung = $_POST['noidung'];
+							$query = "INSERT INTO `tintuc`( `tieude`, `noidung`) VALUES('$tieude','$noidung')"; 
 							mysqli_query($link,$query) or die("thêm dữ liệu thất bại");
-							header('location:../lop.php');
+							header('location:../thongbao.php');
 							}
 						}
 						
 					?>
-					<br>Chọn menu bên trái hoặc click vào <a href="../lop.php" style="color: blue; text-decoration:underline;font-weight:bold;">đây</a> để quay lại danh sách lớp.
+					<br>Chọn menu bên trái hoặc click vào <a href="../thongbao.php" style="color: blue; text-decoration:underline;font-weight:bold;">đây</a> để quay lại thông báo.
 					
 				</div>
 				
@@ -117,6 +107,7 @@
         <!--endbody-->
 		<footer>
 			<div class="container">
+				
 			</div>
 		</footer>
        
