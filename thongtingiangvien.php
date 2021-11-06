@@ -1,8 +1,6 @@
 <?php
 session_start();
 if (isset($_SESSION['username'])) {
-
-  // echo $_SESSION['username'];
   $link = new mysqli('localhost', 'root', '', 'sinhvien', '3306') or die('failed');
   mysqli_query($link, 'SET NAMES UTF8');
 ?>
@@ -44,7 +42,7 @@ if (isset($_SESSION['username'])) {
 						<li><a href="sinhvien.php"><i class="fas fa-graduation-cap"></i>SINH VIÊN</a></li>
 						<li><a id="current" href="giangvien.php"><i class="fas fa-chalkboard-teacher"></i>GIẢNG VIÊN</a></li>
 						<li><a href="diemthi.php"><i class="fas fa-check"></i>ĐIỂM THI</a></li>
-						<li><a href="contact.php"><i class="fas fa-address-book"></i>Contact</a></li>
+						<li><a href="contact.php"><i class="fas fa-address-book"></i>Liên hệ</a></li>
 					</ul>
 
 				</div>
